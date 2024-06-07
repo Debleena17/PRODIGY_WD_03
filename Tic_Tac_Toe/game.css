@@ -8,7 +8,7 @@ body{
 }
 
 .win-msg {
-    position: fixed; /* Fixes the win message to the viewport */
+    position: fixed; /* to fix the win message to the viewport */
     top: 0;
     left: 0;
     width: 100vw; /* to ensure full width */
@@ -55,7 +55,7 @@ h1{
     height: 60vmin;
     width: 60vmin;
     display: grid;                          /*This changes the game container into a grid*/
-    grid-template-columns: repeat(3, 1fr);  /*This aloows foe 3 column to exist in one row with equal fraction(1fr)*/
+    grid-template-columns: repeat(3, 1fr);  /*This allows for 3 column to exist in one row with equal fraction(1fr)*/
     gap: 5px;
 }
 
