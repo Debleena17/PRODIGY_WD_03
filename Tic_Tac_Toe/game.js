@@ -53,7 +53,7 @@ const checkWinner = () => {
         var pos2Val = boxes[pattern[1]].innerHTML;
         var pos3Val = boxes[pattern[2]].innerHTML;
 
-        if(pos1Val != "" && pos2Val != "" && pos3Val != "") {   //thw winner can't be decided if any of the position is empty.
+        if(pos1Val != "" && pos2Val != "" && pos3Val != "") {   //the winner can't be decided if any of the position is empty.
             if(pos1Val === pos2Val && pos2Val === pos3Val) {
                 console.log(pos1Val, "Winner");    // after the three position value matches, this will give the winner in the console.
                 
