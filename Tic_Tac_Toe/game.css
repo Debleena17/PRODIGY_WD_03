@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #283618;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.win-msg {
+    position: fixed; /* Fixes the win message to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* to ensure full width */
+    height: 100vh; /* to ensure full height */
+    background-color: rgba(0, 0, 0, 0.8); /* for a semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* to make sure the message appears above the game content */
+    margin: 0;
+    padding: 0;
+}
+
+
+.hide{
+    display: none;
+}
+
+#msg{
+    color: #FEFAE0;
+    display: flex;
+    justify-content: center;
+    font-size: 4vmin;
+    margin-bottom: 20px; /* to add some space between message and button */
+}
+
+h1{
+    color: #FEFAE0;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container{
+    width: 70vh;
+    height: 70vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: grid;                          /*This changes the game container into a grid*/
+    grid-template-columns: repeat(3, 1fr);  /*This aloows foe 3 column to exist in one row with equal fraction(1fr)*/
+    gap: 5px;
+}
+
+.button{
+    width: 20vmin;
+    height: 20vmin;
+    background-color: #FEFAE0;
+    border: 1px solid #606c38;
+    font-size: 3em;
+    color: #606c38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: #dda15e;
+}
+
+
+.reset-button, .new-button{
+    background-color: #bc6c25;
+    color: black;
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+}
